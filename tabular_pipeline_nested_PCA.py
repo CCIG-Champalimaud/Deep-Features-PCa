@@ -77,7 +77,7 @@ def main():
 
     clf = args.clf
 
-    X, Y = ds.drop(columns=['Target']).values, ds['Target'].values
+    X, Y = ds.drop(columns=['Target', 'ID']).values, ds['Target'].values
 
     X, X_test, Y, Y_test = train_test_split(X, Y, test_size=0.3, random_state=args.seed, stratify=Y)
     
