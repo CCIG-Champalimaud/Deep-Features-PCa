@@ -3,9 +3,9 @@ Script for the evaluation of the integration of deep features into a radiomics p
 
 In order to run the script as is, the dataset should come in a tabular format with the following structure:
 
-| ID   | features       | Target |
-|------|----------------|--------|
-| idx1 | f1,f2,f3 (...) | 1      |
+| ID   | feature1 | feature2 | (...) | Target |
+|------|----------|----------|-------|--------|
+| idx1 | 0.2      | 1        | (...) | 1      |
 
 This can be easily changed by altering the python file.
 
